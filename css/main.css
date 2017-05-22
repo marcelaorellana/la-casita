@@ -1,10 +1,13 @@
- .sol {
-	width: 100px;
-	height: 100px;
+.sol {
+	width: 90px;
+	height: 90px;
 	background: yellow;
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
+	position: relative;
+	top: 20px;
+	left: 20px;
 }
 .techo {
 	border-bottom: 100px solid black;
@@ -12,13 +15,16 @@
 	border-right: 50px solid transparent;
 	height: 0;
 	width: 200px;
-
+	position: relative;
+	left: 300px;
 }
 .chimenea {
 	width: 30px;
 	height: 50px;
 	background: pink;
-
+	position: absolute;
+	top: 30px;
+	left: 120px;
 }
 .humo{
 	width: 30px;
@@ -27,26 +33,42 @@
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
-	
+	position: absolute;
 }
-
+#humo1{
+	top: 0;
+	left: 120px;
+}
+#humo2{
+	bottom: 5px;
+	left: 140px;
+}
+#humo3{
+	bottom: 30px;
+	left: 160px;
+}
 .muralla{
 	width: 300px;
 	height: 200px;
 	background: brown;
-	
+	position: relative;
+	left: 300px;
 }
 .puerta{
 	width: 100px;
 	height: 150px;
 	background: gray;
-
+	position: absolute;
+	bottom: 0;
+	left: 10px;
 }
 .corazon {
     position: relative;
     width: 100px;
     height: 90px;
-  
+    position: absolute;
+	bottom: 20px;
+	left: 10px;
 }
 .corazon:before,
 .corazon:after {
@@ -87,7 +109,9 @@
 	width: 100px;
 	height: 100px;
 	background: lightblue;
-	
+	position: absolute;
+	bottom: 30px;
+	left: 150px;
 }
 .pasto {
 	width: 100%;
